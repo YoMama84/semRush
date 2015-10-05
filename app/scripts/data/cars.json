@@ -1,0 +1,143 @@
+[
+    {
+        "id": 1,
+        "brand": "Volvo",
+        "model": "XC-70",
+        "photo": "images/resized/volvo/xc70.jpeg",
+        "description": "Volvo C70 — полноприводный кроссовер с воплощающим мощь обликом и элегантным интерьером, созданный для всех видов дорог."
+    },
+    {
+        "id": 2,
+        "brand": "Volvo",
+        "model": "C-30",
+        "photo": "images/resized/volvo/c30.jpg",
+        "description": "Volvo 30 — компактный хэтчбэк производства шведской автомобильной компании Volvo Cars. Производился с 2006 по 2013 год на заводе компании в Генте, Бельгия."
+    },
+
+    {
+        "id": 3,
+        "brand": "Volvo",
+        "model": "S60",
+        "photo": "images/resized/volvo/s60.jpg",
+        "description": "Volvo S60 — автомобиль D-класса, производимый шведской компанией Volvo с 2001 года, седан. Модель второго поколения появилась в 2010 году."
+    },
+    {
+        "id": 4,
+        "brand": "Volvo",
+        "model": "c70",
+        "photo": "images/resized/volvo/c70.jpg",
+        "description": "Volvo C70 — купе/кабриолет шведской компании Volvo Cars. Первое поколение поступило в продажу в 1997 как купе (выпускалось до 2002 года) и кабриолет (до 2005 года). Второе поколение C70 выпускалось с 2006 по 2013 год в кузове купе-кабриолет."
+    },
+    {
+        "id": 5,
+        "brand": "Volvo",
+        "model": "740",
+        "photo": "images/resized/volvo/740.jpeg",
+        "description": "Volvo 700 Series — семейство полноразмерных автомобилей производства компании Volvo. Автомобиль выпускался с 1982 по 1992 годы. Дизайн разработан Яном Вильсгардом. Планировался как замена модели Volvo 200 Series, но выпускался с ней параллельно. Заменен в производстве в 1990-92 годах моделями Volvo 900 series. Всего было выпущено 1,239,222 автомобилей в различных модификациях."
+    },
+    {
+        "id": 6,
+        "brand": "Nissan",
+        "model": "Qashqai",
+        "photo": "images/resized/nissan/qashqai.jpg",
+        "description": "Nissan Qashqai (также известен как Nissan Dualis в Японии и Австралии и Nissan Rogue в США) — компактный кроссовер, запущенный в массовое производство в конце декабря 2006 года."
+    },
+    {
+        "id": 7,
+        "brand": "Nissan",
+        "model": "350z",
+        "photo": "images/resized/nissan/350z.jpg",
+        "description": "Nissan 350Z — спортивный автомобиль, выпускаемый корпорацией Nissan Motor Co. 350Z — пятое поколение автомобилей Nissan серии Z, начиная с Datsun 240Z 1969 года."
+    },
+    {
+        "id": 8,
+        "brand": "Nissan",
+        "model": "Altima",
+        "photo": "images/resized/nissan/altima.jpg",
+        "description": "The Nissan Altima - is a mid-size car which has been manufactured by Nissan since 1992. It is a continuation of the Nissan Bluebird line, which began in 1957. The Altima is the top selling Nissan model and primarily competes in the mainstream mid-size sedan class in the United States against its main rivals, the Toyota Camry and Honda Accord. It was the second best-selling car in the United States in 2011."
+    },
+    {
+        "id": 9,
+        "brand": "Nissan",
+        "model": "Elgrand",
+        "photo": "images/resized/nissan/elgrand.jpg",
+        "description": "Nissan Caravan Elgrand — минивэн японской компании Nissan. Первое поколение Nissan Caravan Elgrand производилось с 1997 по 2002 годы, после чего место на конвейере занял минивэн второго поколения."
+    },
+    {
+        "id": 10,
+        "brand": "Nissan",
+        "model": "Pathfinder",
+        "photo": "images/resized/nissan/pathfinder.jpg",
+        "description": "Nissan Pathfinder — полноразмерный кроссовер японской компании Nissan, производство тогда ещё внедорожника, началось в 1985 году. Во многих странах известен как Nissan Terrano. У автомобиля существует четыре поколения. В современной линейке автомобилей Nissan, Pathfinder по размеру занимает место между Murano и Armada или Patrol."
+    },
+    {
+        "id": 11,
+        "brand": "Ford",
+        "model": "EDGE",
+        "photo": "images/resized/Ford/edge.jpg",
+        "description": "Ford Edge — среднеразмерный кроссовер, выпускаемый американским автопроизводителем Ford с 2006 года, основывающийся совместно с предыдущим поколением Mazda6 на платформе Ford CD3 и продаваемый в ребеджинговом виде как Lincoln MKX. Платформа является общей также с кроссовером Mazda CX-9, Ford Fusion."
+    },
+    {
+        "id": 12,
+        "brand": "Ford",
+        "model": "F-15",
+        "photo": "images/resized/Ford/f-15.jpg",
+        "description": "Платформа является общей также с кроссовером Mazda CX-9, Ford Fusion."
+    },
+    {
+        "id": 13,
+        "brand": "Ford",
+        "model": "Focus",
+        "photo": "images/resized/Ford/focus.jpg",
+        "description": "Ford Focus — компактный автомобиль американской компании Ford. В России с 1999 года произведено и продано 500 000 экземпляров. В 2010 году был самой продаваемой иномаркой в России, а в Европе стабильно входит в десятку самых продаваемых автомобилей. Обладатель премии «Автомобиль года в России 2012» в номинации «Малый средний класс»."
+    },
+    {
+        "id": 14,
+        "brand": "Ford",
+        "model": "Mustang",
+        "photo": "images/resized/Ford/mustang.jpg",
+        "description": "Ford Mustang — культовый автомобиль класса Pony Car производства Ford Motor Company."
+    },
+    {
+        "id": 15,
+        "brand": "Ford",
+        "model": "Ranger",
+        "photo": "images/resized/Ford/ranger.jpg",
+        "description": "Ford Ranger – автомобиль американской компании Форд в кузове пикап. Имеет сходство с внедорожниками. Относится к типу компактных пикапов. Производится в Таиланде, на одном заводе с Mazda BT-50. "
+    },
+    {
+        "id": 16,
+        "brand": "Mutsubishi",
+        "model": "ASX",
+        "photo": "images/resized/mitsubishi/asx.jpg",
+        "description": "Mitsubishi ASX — компактный кроссовер японской компании Mitsubishi Motors, дебютировавший на Женевском автосалоне в 2010 году."
+    },
+    {
+        "id": 17,
+        "brand": "Mutsubishi",
+        "model": "Attrage",
+        "photo": "images/resized/mitsubishi/attrage.jpg",
+        "description": "The new Attrage has everything you seek in an eco-friendly sedan."
+    },
+    {
+        "id": 18,
+        "brand": "Mutsubishi",
+        "model": "Outlander",
+        "photo": "images/resized/mitsubishi/canada.jpg",
+        "description": "Mitsubishi › Outlander. Выпускается с 2015 года. Восемь базовых комплектаций."
+    },
+    {
+        "id": 19,
+        "brand": "Mutsubishi",
+        "model": "Lancer",
+        "photo": "images/resized/mitsubishi/lancer.jpg",
+        "description": "Стильный седан Mitsubishi Lancer X от Mitsubishi Motors в России - внешний вид"
+    },
+    {
+        "id": 20,
+        "brand": "Mutsubishi",
+        "model": "Pajero",
+        "photo": "images/resized/mitsubishi/pajero.jpg",
+        "description": "Mitsubishi Pajero (Мицубиси Паджеро) - полноразмерный внедорожник, флагман модельного ряда компании Mitsubishi. "
+    }
+]

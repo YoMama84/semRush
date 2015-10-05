@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/collections/cars.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/collections/favorites.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/collections/statistics.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/cars.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/favorites.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/statistics.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/controllers/tabs.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/data/cars.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/models/car.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/models/favorite.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/models/statistics.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/templates/auto.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/templates/favorite.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/templates/filter.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/templates/photo.ejs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/car.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/cars.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/counter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/favorite.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/favorites.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/filter.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/item.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/photo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/statistics.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/scripts/views/tabs.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+  </component>
+</project>

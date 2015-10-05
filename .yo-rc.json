@@ -1,0 +1,11 @@
+{
+  "generator-backbone": {
+    "appPath": "app",
+    "appName": "Semrush",
+    "coffee": false,
+    "testFramework": "jasmine",
+    "templateFramework": "lodash",
+    "sassBootstrap": false
+  },
+  "generator-jasmine": {}
+}

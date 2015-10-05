@@ -1,0 +1,8 @@
+<td class="table__photo">
+    <img src="<%= photo %>">
+</td>
+<td class="table__model"><% print(brand + ' ' + model) %></td>
+<td class="table__description"><%= description %></td>
+<td class="table__add-favorite">
+    <button type="button" class="table__button <% !!isFavorite && print('table__button--disable') %>">Добавить в избранное</button>
+</td>
