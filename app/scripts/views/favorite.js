@@ -16,6 +16,7 @@ define(['ItemView'], function (ItemView) {
 
         removeFromFavorites: function(){
             this.favoriteModel.set('isFavorite', false);
+            this.remove();
         }
 
 

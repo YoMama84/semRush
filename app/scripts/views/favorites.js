@@ -7,7 +7,7 @@ define(['backbone', 'FavoriteView'], function (Backbone, FavoriteView) {
 
         initialize: function (options) {
             this.favoritesCollection = options.favoritesCollection;
-            this.listenTo(this.favoritesCollection, 'change', this.render);
+            this.listenTo(this.favoritesCollection, 'change:isFavorite', this.renderItem);
             this.render();
         },
 
@@ -17,7 +17,7 @@ define(['backbone', 'FavoriteView'], function (Backbone, FavoriteView) {
             this.collection.forEach(function(model){
                 var favoriteModel = this.favoritesCollection.get(model.id);
 
-                if(favoriteModel.get('isFavorite')){
+                if(this.isFavorite(favoriteModel)){
                     var view = new FavoriteView({
                         model: model,
                         favoriteModel: favoriteModel
@@ -30,6 +30,25 @@ define(['backbone', 'FavoriteView'], function (Backbone, FavoriteView) {
 
             this.$el.html($container);
 
+        },
+
+        //Добавляем новую машину в список избранных
+        renderItem: function (favoriteModel) {
+            var model = this.collection.get(favoriteModel.id);
+
+            if (this.isFavorite(favoriteModel)) {
+                var view = new FavoriteView({
+                    model: model,
+                    favoriteModel: favoriteModel
+                });
+
+                this.$el.append(view.el);
+            }
+
+        },
+
+        isFavorite: function(favoriteModel){
+            return favoriteModel.get('isFavorite')
         }
 
     });
