@@ -1,4 +1,4 @@
-define(['backbone', 'CarView'], function (Backbone, CarView) {
+define(['backbone', 'underscore', 'CarView'], function (Backbone, _, CarView) {
     'use strict';
 
     return Backbone.View.extend({
@@ -41,19 +41,27 @@ define(['backbone', 'CarView'], function (Backbone, CarView) {
 
             this.views.forEach((function (view) {
 
-                if (brand === view.model.get('brand')) {
-                    $container.append(view.$el);
-                    return;
-                }
+                switch (brand) {
 
-                if (brand === 'All') {
-                    $container.append(view.$el);
-                    return;
+                    case view.model.get('brand'):
+                        $container.append(view.$el);
+                        break;
+
+                    case 'All':
+                        $container.append(view.$el);
+                        break;
+
                 }
 
             }).bind(this));
 
             this.$el.html($container);
+        },
+
+        setViewFavoriteModel: function(favoriteModel){
+            _.find(this.views, function(view){
+                return view.model.id === favoriteModel.id;
+            }).setFavoriteModel(favoriteModel);
         }
 
     });

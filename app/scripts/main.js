@@ -68,12 +68,6 @@ require([
     //Ждем загрузки коллекций
     $.when(carsCollection.fetch(), favoritesCollection.fetch()).done(function () {
 
-        /*
-         * Приводим favoritesCollection в полное соответствие с carsCollection,
-         * сопоставляя их по id, если соответствующая модель отсутствует в favoritesCollection, то создаем ее.
-         */
-        favoritesCollection.createMissing(carsCollection);
-
         CarsController.init(carsCollection, favoritesCollection);
         FavoritesController.init(carsCollection, favoritesCollection);
 

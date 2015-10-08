@@ -6,7 +6,7 @@ define(['backbone'], function (Backbone) {
         el: '#favoritesCounter',
 
         initialize: function () {
-            this.listenTo(this.collection, 'change', this.render);
+            this.listenTo(this.collection, 'add remove', this.render);
             this.render();
         },
 
@@ -15,7 +15,7 @@ define(['backbone'], function (Backbone) {
         },
 
         calculateFavorites: function(){
-            return this.collection.where({'isFavorite':true}).length;
+            return this.collection.length;
         }
 
     });

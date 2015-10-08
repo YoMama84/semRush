@@ -3,6 +3,8 @@ define(['backbone', 'FavoritesView', 'CounterView'], function (Backbone, Favorit
     return {
         init: function (carsCollection, favoritesCollection) {
 
+            this.favoritesCollection = favoritesCollection;
+
             new FavoritesView({
                 collection: carsCollection,
                 favoritesCollection: favoritesCollection
@@ -11,7 +13,6 @@ define(['backbone', 'FavoritesView', 'CounterView'], function (Backbone, Favorit
             new CounterView({
                 collection: favoritesCollection
             });
-
 
         }
     };

@@ -8,8 +8,10 @@ define([
 
 
         initialize: function () {
+            this.listenTo(this.collection, 'change add', this.updateData);
 
             this.opacity = 'opacity: 0.4';
+
             this.options = {
                 title: 'Статистика выбора автомобилей по брендам',
                 width: 970,
@@ -18,15 +20,13 @@ define([
                 legend: {position: 'none'},
                 backgroundColor: {fill: '#fafafa'}
             };
-
             this.data = new google.visualization.DataTable();
-            this.chart = new google.visualization.ColumnChart(this.$el.get(0));
 
+            this.chart = new google.visualization.ColumnChart(this.$el.get(0));
             this.addColumns();
             this.addRows();
-            this.render();
 
-            this.listenTo(this.collection, 'change add', this.updateData);
+            this.render();
         },
 
         render: function () {

@@ -7,48 +7,36 @@ define(['backbone', 'FavoriteView'], function (Backbone, FavoriteView) {
 
         initialize: function (options) {
             this.favoritesCollection = options.favoritesCollection;
-            this.listenTo(this.favoritesCollection, 'change:isFavorite', this.renderItem);
+            this.listenTo(this.favoritesCollection, 'add', this.renderItem);
             this.render();
         },
 
-        render: function(){
+
+        render: function () {
             var $container = $(document.createDocumentFragment());
 
-            this.collection.forEach(function(model){
-                var favoriteModel = this.favoritesCollection.get(model.id);
-
-                if(this.isFavorite(favoriteModel)){
-                    var view = new FavoriteView({
-                        model: model,
-                        favoriteModel: favoriteModel
-                    });
-
-                    $container.append(view.el);
-                }
-
-            },this);
+            this.favoritesCollection.forEach(function (favoriteModel) {
+                var model = this.collection.get(favoriteModel.id);
+                var view = this.createFavoriteView(model, favoriteModel);
+                $container.append(view.el);
+            }, this);
 
             this.$el.html($container);
 
         },
 
-        //Добавляем новую машину в список избранных
+        //Добавляем запись в список избранных
         renderItem: function (favoriteModel) {
             var model = this.collection.get(favoriteModel.id);
-
-            if (this.isFavorite(favoriteModel)) {
-                var view = new FavoriteView({
-                    model: model,
-                    favoriteModel: favoriteModel
-                });
-
-                this.$el.append(view.el);
-            }
-
+            var view = this.createFavoriteView(model, favoriteModel);
+            this.$el.append(view.el);
         },
 
-        isFavorite: function(favoriteModel){
-            return favoriteModel.get('isFavorite')
+        createFavoriteView: function (model, favoriteModel) {
+            return new FavoriteView({
+                model: model,
+                favoriteModel: favoriteModel
+            });
         }
 
     });

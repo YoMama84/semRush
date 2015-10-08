@@ -1,9 +1,8 @@
 define(['backbone', 'JST'], function (Backbone, JST) {
     'use strict';
 
+    //Базовый класс для элементов списка
     return Backbone.View.extend({
-
-        template: JST['app/scripts/templates/auto.ejs'],
 
         tagName: 'tr',
 
@@ -12,12 +11,10 @@ define(['backbone', 'JST'], function (Backbone, JST) {
         initialize: function (options) {
             this.favoriteModel = options.favoriteModel;
             this.render();
-
-            this.listenTo(this.favoriteModel, 'change', this.render);
         },
 
         render: function () {
-            this.$el.html(this.template(this.favoriteModel.getUnitedJSON(this.model)));
+            this.$el.html( this.template( this.model.getUnitedJSON(this.favoriteModel) ));
         }
     });
 

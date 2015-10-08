@@ -7,7 +7,7 @@ define(['backbone', 'StatisticsModel', 'localstorage'], function (Backbone, Stat
         localStorage: new Backbone.LocalStorage('StatisticsCollection'),
 
         initialize: function(){
-            this.on('add', function (model) {
+            this.on('add change', function (model) {
                 model.save();
             });
         },

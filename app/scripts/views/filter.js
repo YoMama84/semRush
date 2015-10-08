@@ -35,7 +35,7 @@ define(['backbone', 'JST'], function (Backbone, JST) {
 
         },
 
-        //Сообщаем системе что значение фильра изменились
+        //Сообщаем системе что состояние фильтра изменилось
         triggerFilterChange: function (event) {
             Backbone.trigger('filter:change', $(event.target).data('brand'));
         }

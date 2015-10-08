@@ -3,8 +3,10 @@ define(['backbone', 'JST', 'ItemView'], function (Backbone, JST, ItemView) {
 
     return ItemView.extend({
 
+        template: JST['app/scripts/templates/auto.ejs'],
+
         events: {
-            'click .table__button:not(.table__button--disable)': 'addToFavorites',
+            'click .table__button:not(.table__button--disable)': 'makeFavorite',
             'mouseenter .table__photo': function(event){
                 Backbone.trigger('photo:mouseenter', event, this.model);
             },
@@ -15,17 +17,24 @@ define(['backbone', 'JST', 'ItemView'], function (Backbone, JST, ItemView) {
 
         initialize: function (options) {
             this.favoriteModel = options.favoriteModel;
+            this.listenTo(this.favoriteModel, 'destroy', this.unsetFavoriteModel);
             this.render();
-
-            this.listenTo(this.favoriteModel, 'change', function(){
-                this.render();
-            });
         },
 
-        addToFavorites: function(event){
+        makeFavorite: function(event){
             $(event.target).addClass('table__button--disable');
-            this.favoriteModel.set('isFavorite', true);
-            Backbone.trigger('cars:addToFavorites', this.model);
+            Backbone.trigger('cars:makeFavorite', this.model);
+        },
+
+        setFavoriteModel: function(favoriteModel){
+            this.favoriteModel = favoriteModel;
+            this.listenTo(this.favoriteModel, 'destroy', this.unsetFavoriteModel);
+            this.render();
+        },
+
+        unsetFavoriteModel: function(favoriteModel){
+            this.favoriteModel = null;
+            this.render();
         }
 
     });

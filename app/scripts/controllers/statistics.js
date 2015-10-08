@@ -19,7 +19,7 @@ define([
                 });
             }).bind(this));
 
-            Backbone.on('cars:addToFavorites', this.updateStatistics, this);
+            Backbone.on('cars:makeFavorite', this.updateStatistics, this);
         },
 
         updateStatistics: function (model) {
