@@ -34,6 +34,7 @@
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dist/scripts/data/cars.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/node_modules/grunt-contrib-jasmine/tasks/jasmine/templates/DefaultRunner.tmpl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/index.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/spec/test.js" charset="UTF-8" />
     <file url="file://$USER_HOME$/Desktop/github/generator-backbone/generators/templates/collection.js" charset="UTF-8" />
