@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner</title>
+
+  
+  <link rel="stylesheet" type="text/css" href=".grunt/grunt-contrib-jasmine/jasmine.css">
+  
+
+  
+  
+  
+
+  <script src=".grunt\grunt-contrib-jasmine/require.js"></script>
+
+  
+  
+  <script src=".grunt/grunt-contrib-jasmine/jasmine.js"></script>
+  
+  <script src=".grunt/grunt-contrib-jasmine/jasmine-html.js"></script>
+  
+  <script src=".grunt/grunt-contrib-jasmine/json2.js"></script>
+  
+  <script src=".grunt/grunt-contrib-jasmine/boot.js"></script>
+  
+  
+
+  <script>
+    require.onError = function(error) {
+      var message = error.requireType + ': ';
+      if (error.requireType === 'scripterror' || error.requireType === 'notloaded' && error.requireModules) {
+        message += 'Illegal path or script error: ' + '[\'' + error.requireModules.join("', '") + '\']';
+      } else {
+        message += error.message;
+      }
+
+      throw Error(message);
+    };
+  </script>
+
+  <script>
+    
+
+    
+      require.config({
+  "shim": {},
+  "paths": {
+    "jquery": "../bower_components/jquery/dist/jquery",
+    "backbone": "../bower_components/backbone/backbone",
+    "underscore": "../bower_components/underscore/underscore",
+    "localstorage": "../bower_components/Backbone.localStorage/backbone.localStorage",
+    "async": "../bower_components/requirejs-plugins/src/async",
+    "goog": "../bower_components/requirejs-plugins/src/goog",
+    "propertyParser": "../bower_components/requirejs-plugins/src/propertyParser",
+    "JST": "templates",
+    "TabsView": "views/tabs",
+    "StatisticsView": "views/statistics",
+    "CarView": "views/car",
+    "CarsCollectionView": "views/cars",
+    "FilterView": "views/filter",
+    "PhotoView": "views/photo",
+    "FavoriteView": "views/favorite",
+    "FavoritesView": "views/favorites",
+    "CounterView": "views/counter",
+    "ItemView": "views/item",
+    "CarsCollection": "collections/cars",
+    "StatisticsCollection": "collections/statistics",
+    "FavoritesCollection": "collections/favorites",
+    "StatisticsModel": "models/statistics",
+    "FavoriteModel": "models/favorite",
+    "CarModel": "models/car",
+    "StatisticsController": "controllers/statistics",
+    "TabsController": "controllers/tabs",
+    "CarsController": "controllers/cars",
+    "FavoritesController": "controllers/favorites"
+  },
+  "baseUrl": "app/scripts"
+});
+    
+  </script>
+
+  <script>
+    // Delay onLoad function until we are ready
+    var startTests = window.onload;
+    window.onload = null;
+
+    function launchTest() {
+    require([
+      
+    ],
+    function(){
+      require(['test/spec/test.js','.grunt/grunt-contrib-jasmine/reporter.js'], function(){
+        startTests();
+      });
+    }
+    )
+  }
+  </script>
+
+  
+  <script>
+  launchTest();
+  </script>
+  
+</head>
+<body>
+</body>
+</html>

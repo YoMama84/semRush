@@ -1,15 +1,15 @@
 define([
     'backbone',
-    'CarsCollection',
     'CarsCollectionView',
     'FilterView',
     'PhotoView',
-    'FavoritesCollection'
+    'CarView'
 ], function (Backbone,
-             CarsCollection,
              CarsCollectionView,
              FilterView,
-             PhotoView) {
+             PhotoView,
+             CarView
+) {
     'use strict';
 
     return {
@@ -24,7 +24,8 @@ define([
 
             this.carsView = new CarsCollectionView({
                 collection: carsCollection,
-                favoritesCollection: favoritesCollection
+                favoritesCollection: favoritesCollection,
+                ChildView: CarView
             });
 
             var photoView = new PhotoView();

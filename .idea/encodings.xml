@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/collections/cars.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/collections/favorites.js" charset="UTF-8" />
@@ -30,5 +31,13 @@
     <file url="file://$PROJECT_DIR$/app/scripts/views/tabs.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/styles/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dist/scripts/data/cars.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node_modules/grunt-contrib-jasmine/tasks/jasmine/templates/DefaultRunner.tmpl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test/spec/test.js" charset="UTF-8" />
+    <file url="file://$USER_HOME$/Desktop/github/generator-backbone/generators/templates/collection.js" charset="UTF-8" />
+    <file url="file://$USER_HOME$/Desktop/github/generator-backbone/generators/templates/model.js" charset="UTF-8" />
+    <file url="file://$USER_HOME$/Desktop/github/generator-backbone/generators/templates/router.js" charset="UTF-8" />
+    <file url="file://$USER_HOME$/Desktop/github/generator-backbone/generators/templates/view.ejs" charset="UTF-8" />
   </component>
 </project>

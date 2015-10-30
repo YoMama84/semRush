@@ -64,6 +64,16 @@ __p += '<img src="' +
 return __p
 };
 
+this["JST"]["app/scripts/templates/test.ejs"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += '<p>Your content here.</p>\r\n\r\n';
+
+}
+return __p
+};
+
   return this["JST"];
 
 });

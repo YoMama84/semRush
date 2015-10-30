@@ -1,4 +1,4 @@
-define(['backbone', 'underscore', 'CarView'], function (Backbone, _, CarView) {
+define(['backbone', 'underscore'], function (Backbone, _) {
     'use strict';
 
     return Backbone.View.extend({
@@ -7,6 +7,7 @@ define(['backbone', 'underscore', 'CarView'], function (Backbone, _, CarView) {
 
         initialize: function (options) {
             this.favoritesCollection = options.favoritesCollection;
+            this.ChildView = options.ChildView;
             this.render();
         },
 
@@ -14,8 +15,8 @@ define(['backbone', 'underscore', 'CarView'], function (Backbone, _, CarView) {
             this.views = [];
             var $container = $(document.createDocumentFragment());
 
-            this.collection.forEach(function (model) {
-                var view = new CarView({
+            this.collection.map(function (model) {
+                var view = new this.ChildView({
                     model: model,
                     favoriteModel: this.favoritesCollection.get(model.id)
                 });

@@ -2,10 +2,8 @@
 'use strict';
 
 require.config({
-
     shim: {},
     paths: {
-
         //libs
         jquery: '../bower_components/jquery/dist/jquery',
         backbone: '../bower_components/backbone/backbone',
